@@ -3,6 +3,7 @@ import './App.css'
 
 function App() {
 
+  // lista partecipanti di prova
   const partecipanti = [
     { nome: 'Marco', cognome: 'Rossi' },
     { nome: 'Giulia', cognome: 'Ferrari' },
@@ -15,8 +16,6 @@ function App() {
     { nome: 'Alessandro', cognome: 'Conti' },
     { nome: 'Laura', cognome: 'Esposito' }
   ]
-
-  const persone = ["abc", "bbb", "css", "ala", "bob"];
 
   // variabile di stato che conterrà la ricerca dell'utente
   const [search, setSearch] = useState("");
@@ -35,6 +34,7 @@ function App() {
 
   };
 
+  // funzione che filtra i partecipanti in base al campo di ricerca
   const filtra = () => {
     const filtraUtenti = () => {
       return partecipanti.filter(utente => {
